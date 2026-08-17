@@ -1,0 +1,6 @@
+%{
+  "back_breeze": {:hex, :back_breeze, "0.4.2", "8c07a7992af978a451c6aaba773a6fb8be4203dfe817aa3209a24816bf461abd", [:mix], [{:termite, "~> 0.4.2 or ~> 0.5", [hex: :termite, repo: "hexpm", optional: false]}], "hexpm", "7cf7e32e4150360a5fc6903ff702ef7252f8d301a1b255dd77cc8ead6a5d0bf4"},
+  "breeze": {:hex, :breeze, "0.5.0", "69697d15f8cdcf99f54fef3bd07c552582cbeb40027be43d672edc058914f75e", [:mix], [{:back_breeze, "~> 0.4.2", [hex: :back_breeze, repo: "hexpm", optional: false]}, {:file_system, "~> 1.1", [hex: :file_system, repo: "hexpm", optional: true]}, {:telemetry, "~> 1.0", [hex: :telemetry, repo: "hexpm", optional: false]}, {:termite, "~> 0.4", [hex: :termite, repo: "hexpm", optional: false]}], "hexpm", "dd18314adfb90fa25502af3407b997115a76972ec49a26cf1656467fe7dfdb1e"},
+  "telemetry": {:hex, :telemetry, "1.4.2", "a0cb522801dffb1c49fe6e30561badffc7b6d0e180db1300df759faa22062855", [:rebar3], [], "hexpm", "928f6495066506077862c0d1646609eed891a4326bee3126ba54b60af61febb1"},
+  "termite": {:hex, :termite, "0.4.4", "ffd81e3c8ad27e09d08b7dd722548743567fcf15dd75260edec6d301597ffb9c", [:mix], [], "hexpm", "8d5b4b9368cae7c2a3ff9cc755c64ee34ea3652b0fa5e35872bd492933aec10a"},
+}
