@@ -1,5 +1,22 @@
 defmodule Breeze.Timeline.Hook do
-  @moduledoc false
+  @moduledoc """
+  Runtime hook that captures Breeze timeline checkpoints.
+
+  The timeline page installs this hook automatically. It can also be configured
+  directly through a Breeze server's `:runtime_hooks` option when checkpoint
+  recording is needed without the inspector page.
+
+  ## Options
+
+    * `:every` - captures every N matching renders. Defaults to `1`.
+    * `:limit` - retains at most this many checkpoints. Defaults to `120`.
+    * `:include` - checkpoint attachments. Defaults to
+      `[:frame, :inspector]`.
+    * `:modes` - render modes to capture. Defaults to `[:full, :patch]`.
+    * `:exclude_causes` - render causes to ignore.
+    * `:timeout` - timeout for capturing each view process. Defaults to `5_000`
+      milliseconds.
+  """
 
   @behaviour Breeze.Runtime.Hook
 

@@ -84,8 +84,9 @@ functions inside user assigns remain ordinary in-VM values.
 
 ## Example
 
-The package includes a minesweeper example with timeline capture configured.
-Run the application and inspector in separate terminals from this package:
+The repository includes a minesweeper example with timeline capture configured.
+Run the application and inspector in separate terminals from a repository
+checkout:
 
 ```bash
 # terminal 1

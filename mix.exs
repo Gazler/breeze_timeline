@@ -11,9 +11,11 @@ defmodule BreezeTimeline.MixProject do
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       description: "Opt-in runtime timeline for Breeze applications",
+      name: "Breeze Timeline",
       source_url: "https://github.com/Gazler/breeze_timeline",
+      docs: docs(),
       package: [
-        files: ~w(lib examples mix.exs README.md LICENCE.md),
+        files: ~w(lib mix.exs README.md LICENCE.md),
         licenses: ["MIT"],
         links: %{
           "GitHub" => "https://github.com/Gazler/breeze_timeline",
@@ -32,7 +34,16 @@ defmodule BreezeTimeline.MixProject do
 
   defp deps do
     [
-      breeze_dependency()
+      breeze_dependency(),
+      {:ex_doc, "~> 0.40", only: :dev, runtime: false}
+    ]
+  end
+
+  defp docs do
+    [
+      main: "readme",
+      extras: ["README.md", "LICENCE.md"],
+      source_ref: "v#{@version}"
     ]
   end
 
